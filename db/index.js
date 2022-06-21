@@ -5,6 +5,8 @@
 
 
 import pg from "pg";
+// const { pool } = pg.Pool;
+// import Pool from 'pg'.Pool';
 
 export const pool = new pg.Pool({
   PGUSER: process.env.USER,
