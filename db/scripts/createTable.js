@@ -1,6 +1,6 @@
 import { query } from "../index.js";
 
-const topicsSqlString = "CREATE TABLE IF NOT EXISTS topics (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, title VARCHAR(255), summary VARCHAR(255), complete BOOL, week INT, day INT);";
+const topicsSqlString = "CREATE TABLE IF NOT EXISTS topics (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, topic VARCHAR(255), subtopic VARCHAR(255), weektopic VARCHAR(255), summary TEXT, syntax TEXT, complete BOOL, week INT, day INT);";
 
 const resourcesSqlString = "CREATE TABLE IF NOT EXISTS resources (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, title VARCHAR(255), resource VARCHAR(255));";
 

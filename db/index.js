@@ -7,13 +7,14 @@
 import pg from "pg";
 // const { pool } = pg.Pool;
 // import Pool from 'pg'.Pool';
+import 'dotenv/config';
 
 export const pool = new pg.Pool({
-  PGUSER: process.env.USER,
-  PGDATABASE: process.env.DATABASE,
-  PGHOST: process.env.HOST,
-  PGPORT: process.env.PORT,
-  PGPASSWORD: process.env.PASSWORD,
+  PGUSER: process.env.PGUSER,
+  PGDATABASE: process.env.PGDATABASE,
+  PGHOST: process.env.PGHOST,
+  PGPORT: process.env.PGPORT,
+  PGPASSWORD: process.env.PGPASSWORD,
   ssl: { rejectUnauthorized: false
   }
 })
