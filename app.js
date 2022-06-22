@@ -1,6 +1,7 @@
 import express from 'express';
 import logger from 'morgan';
 import router from './routes/server.js'
+import cors from 'cors';
 
 
 const PORT = process.env.PORT || "3000";
@@ -9,6 +10,7 @@ const app = express();
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.static("public"));
+app.use(cors())
 
 
 /* serves front-end */

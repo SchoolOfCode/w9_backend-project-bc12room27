@@ -37,15 +37,7 @@ router.get('/', async(req, res, next) => {
   const data = await pool.query(`SELECT * FROM topics;`)
   res.send({
     success: true,
-    payload: data })
-  // try {
-  //   const allData = await pool.query(`SELECT * FROM topics;`);
-  //   console.log(allData);
-  //   res.json(allData.rows);
-    
-  // } catch (err) {
-  //   console.error(err.message);
-  // }
+    payload: data.rows})
 })
 
 //async function getAllData() {
