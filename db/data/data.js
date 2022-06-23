@@ -534,10 +534,12 @@ export const topics = [
     note: "",
   }
 
-  export const resources = {
-    title: "resourceName",
-    resource: "resource"
-  }
+  export const resources = [
+    {
+    title: "Relational Databases",
+    resource: `https://www.w3schools.com/html/html5_semantic_elements.asp`
+    }
+  ]
 
 
   

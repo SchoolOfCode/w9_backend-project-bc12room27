@@ -9,25 +9,25 @@ const populateResourcesSqlString = "INSERT INTO resources (title, resource) VALU
 
 const populateNotesSqlString = "INSERT INTO notes (title,note) VALUES ($1, $2);";
 
-async function populateTopicsTables() {
-  for (let i = 0; i<topics.length; i++) {
-    const res = await query(populateTopicsSqlString, [
-      topics[i].topic, 
-      topics[i].subtopic,
-      topics[i].weektopic,
-      topics[i].summary, 
-      topics[i].syntax,
-      topics[i].complete, 
-      topics[i].week, 
-      topics[i].day
-        ]
-      );
-      console.log("Table populated with Topics");
-  }
-};
+// async function populateTopicsTables() {
+//   for (let i = 0; i<topics.length; i++) {
+//     const res = await query(populateTopicsSqlString, [
+//       topics[i].topic, 
+//       topics[i].subtopic,
+//       topics[i].weektopic,
+//       topics[i].summary, 
+//       topics[i].syntax,
+//       topics[i].complete, 
+//       topics[i].week, 
+//       topics[i].day
+//         ]
+//       );
+//       console.log("Table populated with Topics");
+//   }
+// };
 
-async function populateResourcesTables() {
-  for (let i = 0; i<topics.length; i++) {
+async function populateResourcesTable() {
+  for (let i = 0; i<resources.length; i++) {
     const res = await query(populateResourcesSqlString, [
         resources[i].title, 
         resources[i].resource
@@ -51,5 +51,5 @@ async function populateResourcesTables() {
 // }
 
 
-populateTopicsTables();
-// populateResourcesTables();
+// populateTopicsTables();
+populateResourcesTable();

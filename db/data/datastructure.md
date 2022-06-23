@@ -51,3 +51,9 @@ Week 2 Data Structure
       week: 4,
       day: x,
       }
+
+
+export const resources = {
+    title: "resourceName",
+    resource: "resource"
+  }

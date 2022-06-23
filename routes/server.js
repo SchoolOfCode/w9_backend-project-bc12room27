@@ -40,6 +40,13 @@ router.get('/', async(req, res, next) => {
     payload: data.rows})
 })
 
+router.get('/resources', async(req, res, next) => {
+  const data = await pool.query(`SELECT * FROM resources;`)
+  res.send({
+    success: true,
+    payload: data.rows})
+})
+
 //async function getAllData() {
 //   const response = await fetch('/api');
 //   return await response.json()
