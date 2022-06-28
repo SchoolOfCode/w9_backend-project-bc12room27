@@ -6,6 +6,7 @@ const resourcesSqlString = "CREATE TABLE IF NOT EXISTS resources (id INT PRIMARY
 
 const notesSqlString = "CREATE TABLE IF NOT EXISTS notes (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, note TEXT);";
 
+
 async function createTopicTable() {
   const res = await query(topicsSqlString);
   console.log("Sucesss: Topic Table Created");
@@ -20,6 +21,7 @@ async function createNotesTable() {
   const res = await query(notesSqlString);
   console.log("Success: Notes Table Created");
 };
+
 
 createTopicTable();
 createResourcesTable();

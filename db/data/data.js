@@ -1,57 +1,10 @@
-// const data = {
-//   topic: {
-//       summary: 'string of summary',
-//       date: {
-//           week: 1,
-//           day: 1,
-//         },
-//       complete: false,
-//       resources: [
-//           "resource1",
-//           "resource2"
-//       ],
-//       notes: 'string of notes',
-//     },
-//   };
+/* 
+This file contains the data to be pushed to the Heroku database
+Data is currently commented out in order to not send duplicate data to the database
+Data follows the data structure outlined in datastructure.md
 
-  //better to separate tables to create relational data which can be joined
-  //
-
-/*
-data setup  
-export const topics = [
-   {
-    topic: "title string",
-    subtopic: "",
-    summary: "summary string",
-    complete: false,
-    week: 1,
-    day: 1,
-    }, 
-    {
-    topic: "title string",
-    subtopic: "",
-    summary: "summary string",
-    complete: false,
-    week: 1,
-    day: 1,
-    },
-    {
-      topic: "title string",
-      subtopic: "",
-      summary: "summary string",
-      complete: false,
-      week: 1,
-      day: 1,
-      }
-  ]
-  */
-
-
-  //ADD WEEK TOPICS
-
-// check that summary or syntax is unique
-
+With current populateTable script, data must be commented out after running the populateTable script so as not to send duplicate data.
+*/
   export const topics = [
     //  {
     //  topic: "Databases",
@@ -530,15 +483,15 @@ export const topics = [
   
 
   export const notes = {
-    title: "note title",
-    note: "",
+    // title: "note title",
+    // note: "",
   }
 
   export const resources = [
-    {
-    title: "Relational Databases",
-    resource: `https://www.w3schools.com/html/html5_semantic_elements.asp`
-    }
+    // {
+    // title: "Relational Databases",
+    // resource: `https://www.w3schools.com/html/html5_semantic_elements.asp`
+    // }
   ]
 
 

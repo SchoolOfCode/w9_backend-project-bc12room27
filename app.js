@@ -1,8 +1,8 @@
 import express from 'express';
 import logger from 'morgan';
-import router from './routes/server.js'
 import cors from 'cors';
 
+import router from './routes/server.js'
 
 const PORT = process.env.PORT || "3000";
 const app = express();
@@ -13,7 +13,6 @@ app.use(express.static("public"));
 app.use(cors())
 
 
-/* serves front-end */
 app.get("/", function (req, res) {
   res.render("index", { title: "Project Week!" });
 });

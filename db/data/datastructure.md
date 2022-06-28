@@ -1,3 +1,9 @@
+This doc contains:
+• data structure for API database
+• Copyable data structure separated by weeks
+
+General structure of Data for 'Topics' Database:
+
 {
       topic: "",
       subtopic: "",
@@ -7,10 +13,19 @@
       complete: false,
       week: x,
       day: x,
+}
+
+Week 1 Data Structure
+     {
+      topic: "",
+      subtopic: "",
+      weektopic: "Basic HTML, CSS, & JavaScript",
+      summary: "",
+      syntax: ``,
+      complete: false,
+      week: 2,
+      day: x,
       }
-
-
-     Week 1 topic: "Basic HTML, CSS, & JavaScript",
 
 
 Week 2 Data Structure
@@ -39,9 +54,8 @@ Week 2 Data Structure
       }
 
 
-       Week 4 Data Structure
-     
-{
+Week 4 Data Structure    
+      {
       topic: "",
       subtopic: "",
       weektopic: "Node.js, Express & Backend",
@@ -53,6 +67,7 @@ Week 2 Data Structure
       }
 
 
+Data Structure for 'Resources' Database
 export const resources = {
     title: "resourceName",
     resource: "resource"

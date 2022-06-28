@@ -1,12 +1,11 @@
-/*This file:
+/*
+This file:
   • imports the postgres module
-  • makes and exports the query function
+  • creates and exports the query function used to communicate with the database using dotenv for database credentials
 */
 
 
 import pg from "pg";
-// const { pool } = pg.Pool;
-// import Pool from 'pg'.Pool';
 import 'dotenv/config';
 
 export const pool = new pg.Pool({
