@@ -1,3 +1,11 @@
+/*
+This file:
+• imports and instantiates express and other middleware
+• defines routing url ('/api') for server routers in the routes folder
+• defines PORT and an alternative port value
+• when run, sets server running and listening on defined port
+ */
+
 import express from 'express';
 import logger from 'morgan';
 import cors from 'cors';
